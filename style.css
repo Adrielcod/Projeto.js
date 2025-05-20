@@ -1,0 +1,241 @@
+/* Reset e Cores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: white;
+    color: black;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+}
+
+.faixa-preta {
+    background: black;
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.cabecalho h1 {
+    color: black;  /* Título em preto (mas pode mudar para branco se preferir) */
+    margin: 1rem 0;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+}
+
+.cabecalho nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.cabecalho nav ul li a {
+    color: black;  /* Links em preto */
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.cabecalho nav ul li a.ativo {
+    border-bottom: 2px solid black;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 3rem 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.1rem;
+}
+
+/* Cards de Planos */
+.planos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 2rem;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card.destaque {
+    border: 2px solid black;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.card .preco {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    color: black;
+}
+
+.card ul {
+    list-style: none;
+    margin: 1.5rem 0;
+}
+
+.card ul li {
+    margin: 0.5rem 0;
+}
+
+.card button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.card button:hover {
+    background: #333;
+}
+
+/* Rodapé */
+.rodape {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .planos {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* Estilos para a página Sobre */
+.sobre {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.diferenciais {
+    margin: 2rem 0;
+    text-align: left;
+}
+
+.diferenciais ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.diferenciais li {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+}
+
+.missao {
+    font-style: italic;
+    margin-top: 2rem;
+}
+/* Estilos para a página de Contato */
+.contato {
+    text-align: center;
+    padding: 2rem;
+}
+
+.contato-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.contato-card {
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 2rem;
+    width: 280px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.contato-card:hover {
+    transform: translateY(-5px);
+}
+
+.contato-card i {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.contato-card h3 {
+    margin: 0.5rem 0;
+    color: #2c3e50;
+}
+
+.contato-card p {
+    margin: 0.5rem 0 1.5rem;
+    color: #666;
+}
+
+.botao-contato {
+    display: inline-block;
+    background: #2c3e50;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.botao-contato:hover {
+    background: #1a252f;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .contato-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
